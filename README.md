@@ -15,3 +15,5 @@ Working with exist database file in Xamarin.Forms!
 4. Enjoy it!
 
 YouTube link: 
+I don't have iOS device to test code, you can Donation for me to buy an iPhone or you can give me your iPhone to help me test code in next video. Thank you
+Donation link: https://www.paypal.me/ChannelNtl
