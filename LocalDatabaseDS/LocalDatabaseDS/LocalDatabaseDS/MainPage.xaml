@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LocalDatabaseDS"
+             x:Class="LocalDatabaseDS.MainPage">
+
+    <StackLayout Margin="5">
+        <!-- Place new controls here -->
+    	<Label Text="Local Database with DependencyService!" 
+           HorizontalOptions="Center"/>
+        <Entry Placeholder="Enter Staff Name" x:Name="EntryFullName"/>
+        <Entry Placeholder="Enter Staff Address" x:Name="EntryAddress"/>
+        <Button Text="Save" x:Name="ButtonSave" Clicked="ButtonSave_OnClicked"/>
+        <ListView x:Name="MyListView" HasUnevenRows="False" RowHeight="50">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding FullName}" FontAttributes="Bold" FontSize="20"/>
+                            <Label Text="{Binding Address}" FontAttributes="Italic"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Delete" x:Name="ButtonDelete" Clicked="ButtonDelete_OnClicked"/>
+    </StackLayout>
+
+</ContentPage>
